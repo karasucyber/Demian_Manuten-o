@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site em Manutenção</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            overflow: hidden; /* Evita scroll se o conteúdo for muito grande */
+        }
+
+        .container {
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+            width: 500px;
+        }
+
+        h1 {
+            color: #d9534f; /* Um tom de vermelho */
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        
+        /* Ícone de Ferramenta (SVG) */
+        .maintenance-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            fill: #d9534f;
+            /* Animação de rotação */
+            animation: spin 3s linear infinite; /* 3s de duração, linear (velocidade constante), infinito */
+            transform-origin: center center; /* Garante que gire no próprio centro */
+        }
+
+        /* Definição da animação de giro */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25d366;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 25px;
+            transition: background-color 0.3s;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #128c7e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Site em Manutenção</h1>
+        <p>Estamos trabalhando para melhorar nosso site. Voltaremos em breve!</p>
+        <p>Enquanto isso, se precisar de ajuda ou tiver alguma dúvida, entre em contato conosco pelo WhatsApp.</p>
+        
+        <a href="https://api.whatsapp.com/send?phone=5511945809260&text=Ol%C3%A1!%20Vim%20pelo%20site." class="whatsapp-button" target="_blank">Falar no WhatsApp</a>
+    </div>
+
+</body>
+</html>
